@@ -9,7 +9,7 @@ const timer = {
 
 const changePage = branch => {
   if (firebase.auth().currentUser) {
-    window.location = `/admin?branch=${branch}`
+    window.location = `./admin.html?branch=${branch}`
   }
 }
 
