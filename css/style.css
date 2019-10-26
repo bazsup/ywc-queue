@@ -1,12 +1,20 @@
 @font-face {
-  font-family: 'Supermarket';
+  font-family: 'Maledpan';
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/supermarket-webfont.woff) format('woff');
+  src: url(../fonts/Maledpan-Regular.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Maledpan';
+  font-style: bold;
+  font-weight: 400;
+  src: url(../fonts/Maledpan-Bold.otf) format('opentype');
 }
 
 * {
-  font-family: 'Supermarket', 'Raleway', sans-serif;
+  font-family: 'Maledpan', 'Raleway', sans-serif;
+  font-weight: bold;
 }
 
 body {
@@ -76,7 +84,6 @@ h4 {
 
 .branch-card h3 {
   font-weight: bold;
-  font-family: 'Raleway';
 }
 
 .branch-name {
