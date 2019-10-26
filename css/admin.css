@@ -1,3 +1,17 @@
+* {
+  color: white;
+}
+
+input {
+  color: black;
+}
+
+.queue-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2em;
+}
+
 #branch {
   font-size: 40px;
   text-decoration: underline;
@@ -20,7 +34,7 @@ input {
 }
 
 button {
-  background: red;
+  background: seagreen;
   color: white;
   font-size: 20px;
   border: none;

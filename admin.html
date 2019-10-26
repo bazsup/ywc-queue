@@ -18,48 +18,50 @@
     </div>
 
     <!-- Remote -->
-    <center>
-      <div id="branch">BRANCH NAME</div>
-      <h1>ON SCREEN: <div id="on-screen">-</div></h1>
+    <div style="max-width: 960px; margin: auto;">
+      <div id="branch">Branch name</div>
+      <h1>On screen: <div id="on-screen">-</div></h1>
 
-      <br>
-      <br>
+      <div class="queue-container">
+        <!-- Regular Queue -->
+        <div class="regular-queue">
+          <h1>Queue</h1>
+          <input id="current-queue" type="tel" value="0" min="0" max="80">
+          <br>
+          <button onclick="modifyQueue(-1)">
+            <h2> - </h2>
+          </button>
+          <button onclick="modifyQueue(1)">
+            <h2> + </h2>
+          </button>
+          <button onclick="publishQueue()">
+            <h2> PUBLISH </h2>
+          </button>
+        </div>
+        <!-- Custom Queue -->
+        <div class="custom-queue">
+          <h1>Custom text</h1>
+          <input id="custom-queue" type="text">
+          <br>
+          <button onclick="publishCustomText()">
+            <h2> PUBLISH </h2>
+          </button>
+        </div>
+      </div>
 
-      <!-- Regular Queue -->
-      <h1>QUEUE</h1>
-      <input id="current-queue" type="tel" value="0" min="0" max="80">
-      <br>
-      <button onclick="modifyQueue(-1)">
-        <h2> - </h2>
-      </button>
-      <button onclick="modifyQueue(1)">
-        <h2> + </h2>
-      </button>
-      <button onclick="publishQueue()">
-        <h2> PUBLISH </h2>
-      </button>
-
-      <br>
-      <br>
-      <br>
-
-      <!-- Custom Queue -->
-      <h1>CUSTOM</h1>
-      <input id="custom-queue" type="text">
-      <br>
-      <button onclick="publishCustomText()">
-        <h2> PUBLISH </h2>
-      </button>
-    </center>
+    </div>
 
     <!-- QR Code -->
-    <div class="logo-container">
-      <h1 id="check-queue-text">ตรวจสอบคิวได้ที่นี่</h1>
-      <img src="./images/qrcode.png" alt="qrcode">
-      <br>
-      <a href="https://kykungz.github.io/ywc-queue">
-        https://kykungz.github.io/ywc-queue
-      </a>
+    <div class="qr-container">
+      <div class="qr-code-wrapper">
+        <img src="./images/qrcode.png" alt="qrcode">
+      </div>
+      <div>
+        <p class="invite-text" id="check-queue-text">สามารถตรวจสอบคิวเรียกสัมภาษณ์ได้ที่</p>
+        <a class="queue-link" href="https://q.ywc.in.th" target="_blank">
+          https://q.ywc.in.th/
+        </a>
+      </div>
     </div>
 
     <footer>
