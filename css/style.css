@@ -71,7 +71,19 @@ h4 {
 }
 
 .branch-card > div:first-child {
-  margin: 1em;
+  min-height: 206px;
+  position: relative;
+}
+
+.branch-card > div:first-child img[alt="web content"] {
+  margin-top: 20px;
+}
+
+.branch-card > div:first-child > h3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .branch-card img {
@@ -129,7 +141,8 @@ h4 {
 }
 
 .current-queue-text {
-  font-size: 24px;
+  font-size: 18px;
+  font-weight: normal;
   margin-bottom: 0.25em;
 }
 
