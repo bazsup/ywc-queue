@@ -215,6 +215,15 @@ h4 {
     justify-content: space-between;
     align-items: center;
   }
+  .branch-card > div {
+    width: 40%;
+  }
+  .branch-card > div:first-child {
+    min-height: auto;
+  }
+  .branch-card > div:first-child > h3 {
+    position: static;
+  }
   .current-queue {
     font-size: 40px;
   }
@@ -223,11 +232,11 @@ h4 {
     margin-bottom: 0.25em;
   }
   .branch-card img {
-    margin: 0;
-    margin-bottom: 1em;
     max-height: 80px;
+    margin: 0 !important;
   }
-  .branch-card > div:first-child {
-    margin: 1em 0;
+
+  .qr-container {
+    display: none;
   }
 }
