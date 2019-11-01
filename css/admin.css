@@ -12,6 +12,12 @@ input {
   grid-gap: 2em;
 }
 
+@media (max-width: 780px) {
+  .queue-container {
+    grid-template-columns: 1fr;
+  }
+}
+
 #branch {
   font-size: 40px;
   text-decoration: underline;
